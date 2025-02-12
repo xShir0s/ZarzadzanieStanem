@@ -1,19 +1,14 @@
 import React, {useState} from "react";
 
-
-
-let count =0
-
-
 const MessegeLogger = () =>
 {
-    const [messege, setNewMessege] = useState(["wiadomosc 0"])
+    const [messages, setMessages] = useState([])
 
     function handleClick()
     {
-        count++
-        setNewMessege(prevMessege => ({...prevMessege, messege: `Wiadomosc ${count} `}))
-        console.log(messege)
+
+        setMessages(prevMessages => [...prevMessages, `Wiadomośc ${prevMessages.length +1} `])
+        console.log(messages)
 
     }
 
@@ -24,9 +19,9 @@ const MessegeLogger = () =>
                 <button onClick={handleClick}>Dodaj Wiadomosc</button>
 
                 
-                <li> {messege.map((message, index) => {
-                    <li key={index}>{message}</li>
-                })}    </li>
+                <div> {messages.map((message, index) => (
+                    <div key={index}>{message}</div>
+                ))}    </div>
             </p>
 
         </>

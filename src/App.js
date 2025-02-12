@@ -7,6 +7,10 @@ import Loading from "./taski 02/Loading/loading"; // task 2 02
 import Czesc from "./taski 03/Czesc/Czesc"; // task 1 03
 import RandomNumber from "./taski 03/RandomNumber/RandomNumber"; // task 2 03
 import MessegeLogger from "./taski 04/MessegeLogger/MessegeLogger"; // task 2 04
+import ProductForm from "./taski 05/ProductForm/ProductForm"; // task 1 05, aby zobaczyc alert trzeba usunąć komentarz w lini 16
+import UserSettings from "./taski 05/UserSettings/UserSettings"; // task 2 05
+import Profile from "./taski 06/Profile/Profile"; // task 1 06
+import OrderDetails from "./taski 06/OrderDetails/OrderDetails"; // task 02 06
 function App() {
   return (
     <div className="App">
@@ -17,6 +21,10 @@ function App() {
         <Czesc  name={"Miłosz"} />
         <RandomNumber/>
         <MessegeLogger/>
+        <ProductForm name={"Jabłko"} price={"3.14"} category={"Owoce"} />
+        <UserSettings/>
+        <Profile/>
+        <OrderDetails/>
     </div>
   );
 }
