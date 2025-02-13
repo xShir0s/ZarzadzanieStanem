@@ -11,9 +11,12 @@ import ProductForm from "./taski 05/ProductForm/ProductForm"; // task 1 05, aby 
 import UserSettings from "./taski 05/UserSettings/UserSettings"; // task 2 05
 import Profile from "./taski 06/Profile/Profile"; // task 1 06
 import OrderDetails from "./taski 06/OrderDetails/OrderDetails"; // task 02 06
+import FruitList from "./taski 07/task 01/FruitList" // task 01 07
+import TaskManager from "./taski 07/task 02/TaskManager"; // task 02 07
 function App() {
   return (
     <div className="App">
+        <TaskManager/>
         <Licznik/>
         <Logowanie/>
         <UserInfo/>
@@ -25,6 +28,8 @@ function App() {
         <UserSettings/>
         <Profile/>
         <OrderDetails/>
+        <FruitList/>
+
     </div>
   );
 }
